@@ -5,11 +5,11 @@ from tkinter import messagebox
 import pyodbc
 
 # Connecting to the Sql server
-server = 'DESKTOP-CHINWEU' 
+server = 'DESKTOP-EGLSDIK' 
 database = 'LibraryManagementSystem' 
 # username = 'myusername' 
 # password = 'mypassword' 
-cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=server;DATABASE=database;Trusted_Connection=yes;')
+cnxn = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};SERVER=server;DATABASE=database;Trusted_Connection=yes;')
 cursor = cnxn.cursor()
 
 # Enter Table Names here
